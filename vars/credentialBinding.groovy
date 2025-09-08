@@ -4,3 +4,5 @@ def call(){
     sh "docker image tag updated-notesapp:latest ${env.dockerHubUser}/updated-notesapp:latest"
     sh "docker push ${env.dockerHubUser}/updated-notesapp:latest"
   }
+
+}
