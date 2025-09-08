@@ -1,3 +1,3 @@
-def call(){
-  sh "docker build -t updated-notesapp ."
+def call(String image_name){
+  sh "docker build -t ${image_name} ."
 }
